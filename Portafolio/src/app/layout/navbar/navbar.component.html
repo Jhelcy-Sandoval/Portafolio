@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+    <div class="col-2 d-block align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="../../../assets/img/icono.svg" class="img-fluid" alt="logo">
+      </a>
+    </div>
+    <button class="navbar-toggler bg-body-secondary" type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarContent" 
+      aria-controls="navbarContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+      (click)= isCollapse()>
+      <span class="navbar-toggler-icon icon-white"></span>
+      
+    </button>
+    <div class="collapse navbar-collapse {{menu}}" id="navbarContent" >
+      <div class="col-8 navbar-nav d-flex justify-content-evenly m-2">
+        <button class="btn btn-link"  class="nav-link">Hogar</button>
+        <button class="btn btn-link" class="nav-link">Proyectos</button>
+        <button class="btn btn-link"class="nav-link">Sobre mi</button>
+        <button class="btn btn-link" class="nav-link">Educación</button>
+      </div>
+      <div class="col-2 d-flex navbar-nav justify-content-evenly m-1">
+        <button class="btn btn-primary mb-1 p-2" role="button">Contacto</button>
+        <button class="btn bg-body-secondary mb-1 p-2" role="button">Curriculum</button>
+      </div>
+    </div>
+  </div>
+</nav>

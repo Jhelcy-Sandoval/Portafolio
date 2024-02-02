@@ -1,0 +1,16 @@
+.navbar{
+  background-color: #001321;
+}
+
+.btn-nav{
+  color: rgb(190, 190, 190);
+}
+
+.img-fluid{
+  min-width: 3rem;
+  max-width: 6rem;
+}
+
+.nav-link{
+  color: blanchedalmond;
+}
