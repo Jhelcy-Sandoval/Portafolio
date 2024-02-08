@@ -1,24 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { HomeComponent } from '../../pages/home/home.component';
-import { ProyectsComponent } from '../../pages/proyects/proyects.component';
-import { AboutMeComponent } from '../../pages/about-me/about-me.component';
-import { EducationComponent } from '../../pages/education/education.component';
-import { ContactComponent } from '../../pages/contact/contact.component';
-import { CurriculumComponent } from '../../pages/curriculum/curriculum.component';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
   imports: [
-    HomeComponent, 
-    ProyectsComponent, 
-    AboutMeComponent, 
-    EducationComponent, 
-    ContactComponent, 
-    CurriculumComponent],
+    RouterModule, 
+    CommonModule, 
+    NavbarComponent,
+    FooterComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
-export class ContentComponent {
+export default class ContentComponent {
 
 }

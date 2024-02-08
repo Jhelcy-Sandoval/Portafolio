@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md">
   <div class="container-fluid">
     <div class="col-2 d-block align-items-center">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/home">
         <img src="../../../assets/img/icono.svg" class="img-fluid" alt="logo">
       </a>
     </div>
@@ -16,15 +16,22 @@
       
     </button>
     <div class="collapse navbar-collapse {{menu}}" id="navbarContent" >
-      <div class="col-8 navbar-nav d-flex justify-content-evenly m-2">
-        <button class="btn btn-link"  class="nav-link">Hogar</button>
-        <button class="btn btn-link" class="nav-link">Proyectos</button>
-        <button class="btn btn-link"class="nav-link">Sobre mi</button>
-        <button class="btn btn-link" class="nav-link">Educación</button>
-      </div>
-      <div class="col-2 d-flex navbar-nav justify-content-evenly m-1">
-        <button class="btn btn-primary mb-1 p-2" role="button">Contacto</button>
-        <button class="btn bg-body-secondary mb-1 p-2" role="button">Curriculum</button>
+      <div class="col-10 navbar-nav d-flex justify-content-evenly m-2">
+        @for (item of navBar; track item) {
+          <a
+          [routerLink]="item.path"
+          routerLinkActive="bg-primary rounded"
+          class="p-2 d-inline-flex"
+          [class.border]="(item.title === 'Contact' || item.title === 'Curriculum')"
+          [class.border-light]="(item.title === 'Contact' || item.title === 'Curriculum')"
+          >
+          <div class="flex flex-col" >
+              <span class="text-lg font-bold leading-5 text-white">
+                {{item.title}}
+              </span>
+          </div>
+          </a>
+      }
       </div>
     </div>
   </div>

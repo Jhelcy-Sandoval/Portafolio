@@ -1,9 +1,9 @@
-<div class="container-fluid">
-  <app-home></app-home>
-  <app-proyects></app-proyects>
-  <app-about-me></app-about-me>
-  <app-education></app-education>
-  <app-contact></app-contact>
-  <app-curriculum></app-curriculum>
-</div>
-
+<section>
+  <div>
+    <app-navbar/>
+  </div>
+  <div id="router-container" class="router-container">
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</section>

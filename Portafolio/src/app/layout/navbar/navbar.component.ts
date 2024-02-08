@@ -1,24 +1,27 @@
 import { Component } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
+import { routes } from '../../app.routes';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  collapse = false
-  menu = ''
-  activeHome = false
-  activeProyects = false
-  activeAboutMe = false
-  activeEducation = false
-  activeCurriculum = false
-  activeContact = false
+  public collapse = false
+  public menu = ''
+  public navBar = routes
+    .map((route) => route.children ?? [])
+    .flat()
+    .filter((route) => route && route.path)
+    .filter((route) => !route.path?.includes(':'));;
 
-  varMenu() {
+  constructor(){}
+
+  public varMenu() {
     if (this.collapse === true) {
       this.menu = 'show';
     } else {

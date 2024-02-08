@@ -1,3 +1,43 @@
 <div class="footer">
-  <p>footer works!</p>
+  <div class="container-fluid ">
+    <div class="row p-4">
+      <div class="col-2 d-block align-items-center">
+        <a class="" href="/home">
+          <img src="../../../assets/img/icono.svg" class="img-fluid" alt="logo">
+        </a>
+      </div>
+      <div class="col-4">
+        <h1>Links</h1>
+        <ul>
+            @for (item of footerBar; track item) {
+              <a
+              [routerLink]="item.path"
+              routerLinkActive="border-bottom border-light"
+              >
+                <li class="fs-6  leading-5 text-white">
+                    {{item.title}}
+                </li>
+              </a>
+          }
+        </ul>
+      </div>
+      <div class="col-4">
+        <h1>Otros</h1>
+        <ul>
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">link</button>
+      </div>
+    </div>
+    <div class="border border-light"></div>
+    <div class="d-flex justify-content-center align-items-center" >
+      <p>© 2024 Jhelcy Sandoval. Todos los derechos reservados.</p>
+    </div>
+  </div>
 </div>
