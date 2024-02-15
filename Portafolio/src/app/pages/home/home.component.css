@@ -16,3 +16,9 @@
   font-weight: bolder;
   font-size: 4rem
 }
+
+.carousel-col{
+  background-color: #001321;
+  padding: 3%;
+  box-sizing: border-box;
+}

@@ -1,16 +1,23 @@
-<div class="container-fluid">
+<section class="container-fluid">
   <div class="row py-4 row-cols-1 row-cols-md-2">
-    <div class="col-7">
-      <div class="m-5 p-1">
+    <div class="col">
+      <div class="mx-md-5">
         <h1 class="text-primary my-4">Jhelcy sandoval</h1>
         <h2 class="fs-1 grey d-inline text-black px-3 my-4">Frontend developer</h2>
         <h3 class="fs-2 fst-italic my-4">Transformando líneas de código en soluciones innovadoras</h3>
+        <div class="p-3">
+          <img src="../../../assets/img/stack.svg" alt="" class=" w-md-100 " >
+        </div> 
       </div>
     </div>
     <div class="col">
       <div class="banner-image d-flex justify-content-center p-5">
         <img  class="rounded-circle img-fluid w-75 h-50" src="../../../assets/img/foto.jpg" alt="foto de perfil">
       </div>
+      <span class="text-center d-flex justify-content-center align-items-center ">
+        <p #email class="p-2">jhelcysandoval&#64;gmail.com</p>
+        <button class="btn btn-primary" (click)="copyClipboard(email)">copiar</button>
+      </span>
     </div>
   </div>
   <div class="row grey">
@@ -27,96 +34,124 @@
   </div>
   <div class="row py-4">
     <div class="col-5">
-      <hr class="border border-ligth border-3 opacity-75">
+      <hr class="border border-ligth border-3 opacity-50 d-none d-md-block">
     </div>
     <div class="col-2 d-flex justify-content-center">
       <h1>servicios</h1>
     </div>
     <div class="col-5 ">
-      <hr class="border border-ligth border-3 opacity-75">
+      <hr class="border border-ligth border-3 opacity-50 d-none d-md-block">
     </div>
   </div>
   <div class="row row-cols-sm-1 row-cols-md-4">
     <div class="col d-flex justify-content-center">
       <div class="text-center p-5">
-        <p>hola</p>
-        <p>holoihyfyt guohtufgiu hbgfyvgu, lhugnyrdjtg kygtfrfytuftiutvy</p>
+        <img src="../../../assets/img/window-fullscreen.svg" class="w-25 m-3" alt="">
+        <h5 class="fw-bold">Desarrollo de sitios web</h5>
+        <p>Diseño y desarrollo de sitios web responsivos y atractivos </p>
         <a href="">ver mas</a>
       </div>
     </div>
     <div class="col d-flex justify-content-center">
       <div class="text-center p-5">
-        <p>hola</p>
-        <p>holoihyfy tguohtufgiu hbgfyvgu, lhugnyrdjtg kygtfrfytu ftiutvy</p>
-        <a href="">ver mas</a>
+        <img src="../../../assets/img/window-sidebar.svg" class="w-25 m-3" alt="">
+        <h5 class="fw-bold">Desarrollo de aplicaciones web</h5>
+        <p>Crear aplicaciones web personalizadas y escalables utilizando tecnologías modernas</p>
+        <a href="portafolio/about-me">ver mas</a>
       </div>
     </div>
     <div class="col d-flex justify-content-center">
       <div class="text-center p-5">
-        <p>hola</p>
-        <p>holoihyfyt guohtufgiuhb gfyvgu,lhugnyrd  jtgkygtfrfyt uftiutvy</p>
-        <a href=""> ver mas</a>
+        <img src="../../../assets/img/database-fill-gear.svg" class="w-25 m-3" alt="">
+        <h5 class="fw-bold">Integración de API</h5>
+        <p>Integrar servicios externos y APIs en aplicaciones web</p>
+        <a href="portafolio/about-me"> ver mas</a>
       </div>
     </div>
     <div class="col d-flex justify-content-center">
       <div class="text-center p-5">
-        <p>hola</p>
-        <p>holoihyfytguoht ufgiuhbgfyvgu, lhugnyrdjtgky gtfrfytuftiutvy</p>
-        <a href="">ver mas</a>
+        <img src="../../../assets/img/chat-square-text-fill.svg" class="w-25 m-3" alt="">
+        <h5 class="fw-bold">Consultoría en tecnología</h5>
+        <p>Asesoramiento experto sobre la selección de tecnologías adecuadas</p>
+        <a href="portafolio/about-me">ver mas</a>
       </div>
     </div>
   </div>
-  <div class="row ">
-    <div class="col d-flex justify-content-center">
+  <div class="row py-4 grey">
+    <div class="col-5">
+      <hr class="border border-dark border-3 opacity-50 d-none d-md-block">
+    </div>
+    <div class="col-2 d-flex justify-content-center ">
+      <h1>Proyectos</h1>
+    </div>
+    <div class="col-5 ">
+      <hr class="border border-dark border-3 opacity-50 d-none d-md-block">
+    </div>
+  </div>
+  <div class="row grey p-3 justify-content-center">         
+    <div class="col col-md-5 carousel-col">
+      <app-proyectos></app-proyectos>
+      <div class="d-flex justify-content-center">
+        <a href="portafolio/proyectos" class="btn btn-primary my-1 text-center ">ver mas proyectos</a>
+      </div> 
+    </div>
+  </div>
+   <div class="row py-4">
+    <div class="col-5">
+      <hr class="border border-ligth border-3 opacity-50 d-none d-md-block">
+    </div>
+    <div class="col-2 d-flex justify-content-center">
       <h1>Habilidades</h1>
     </div>
+    <div class="col-5 ">
+      <hr class="border border-ligth border-3 opacity-50 d-none d-md-block">
+    </div>
   </div>
-  <div class="row p-5">
-    <div class="col mx-5">
-      <h1>Habilidades tecnicas</h1>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
+  <div class="container text-center">
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col">
+      <div class="p-3">
+
       </div>
     </div>
     <div class="col">
-      <h1>Habilidades tecnicas</h1>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-      <h4 class="fs-5">javascript</h4>
-      <div class="progress bg-transparent" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>
-    </div> 
-  </div>
-  <div class="row grey">
-    <div class="col">
-      
+      <div class="p-3">Row column</div>
     </div>
-    <div class="col px-5">
-      
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Row column</div>
     </div>
   </div>
 </div>
+  <div class="row my-1">
+    <div class="col p-5">
+      <h1>¿Cómo Puedo Ayudarte?</h1>
+      <p>Ya sea que necesites optimizar procesos, implementar nuevas funcionalidades o crear un sistema desde cero, estoy aquí para convertir tus ideas en realidad. ¡Vamos a trabajar juntos para llevar tu empresa al siguiente nivel!</p>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center ">
+      <div class="m-4 border border-primary border-3 rounded">
+        <button class="btn btn-primary btn-lg m-5"> Ponte en contacto</button>
+      </div>
+    </div>
+  </div>
+</section>

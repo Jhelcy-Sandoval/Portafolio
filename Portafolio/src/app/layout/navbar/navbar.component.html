@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md">
   <div class="container-fluid">
     <div class="col-2 d-block align-items-center">
-      <a class="navbar-brand" href="/home">
+      <a class="navbar-brand" [routerLink]="'home'">
         <img src="../../../assets/img/icono.svg" class="img-fluid" alt="logo">
       </a>
     </div>
@@ -22,8 +22,8 @@
           [routerLink]="item.path"
           routerLinkActive="bg-primary rounded"
           class="p-2 d-inline-flex"
-          [class.border]="(item.title === 'Contact' || item.title === 'Curriculum')"
-          [class.border-light]="(item.title === 'Contact' || item.title === 'Curriculum')"
+          [class.border]="(item.title === 'Contacto' || item.title === 'Curriculum')"
+          [class.border-light]="(item.title === 'Contacto' || item.title === 'Curriculum')"
           >
           <div class="flex flex-col" >
               <span class="text-lg font-bold leading-5 text-white">
