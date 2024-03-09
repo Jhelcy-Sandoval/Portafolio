@@ -1,22 +1,24 @@
-<section class="container-fluid">
+<section class="container-lg home">
   <div class="row py-4 row-cols-1 row-cols-md-2">
-    <div class="col">
+    <div class="col text-center text-md-start">
       <div class="mx-md-5">
         <h1 class="text-primary my-4">Jhelcy sandoval</h1>
         <h2 class="fs-1 grey d-inline text-black px-3 my-4">Frontend developer</h2>
-        <h3 class="fs-2 fst-italic my-4">Transformando líneas de código en soluciones innovadoras</h3>
-        <div class="p-3">
+        <h3 class="fs-2 fst-italic my-4 mx-5 mx-md-0">Transformando líneas de código en soluciones innovadoras</h3>
+        <div >
           <img src="../../../assets/img/stack.svg" alt="" class=" w-md-100 " >
         </div> 
       </div>
     </div>
     <div class="col">
-      <div class="banner-image d-flex justify-content-center p-5">
-        <img  class="rounded-circle img-fluid w-75 h-50" src="../../../assets/img/foto.jpg" alt="foto de perfil">
+      <div class="banner-image d-flex justify-content-center">
+        <img  class="rounded-circle img-fluid  m-4" src="../../../assets/img/foto.jpg" alt="foto de perfil">
       </div>
       <span class="text-center d-flex justify-content-center align-items-center ">
-        <p #email class="p-2">jhelcysandoval&#64;gmail.com</p>
-        <button class="btn btn-primary" (click)="copyClipboard(email)">copiar</button>
+        <p #email class="p-2 m-2">jhelcysandoval&#64;gmail.com</p>
+        <button class="btn btn-ligth border border-primary" (click)="copyClipboard(email)">
+          <img src="../../../assets/img/envelope-at-fill.svg" alt="">
+        </button>
       </span>
     </div>
   </div>
@@ -107,42 +109,9 @@
       <hr class="border border-ligth border-3 opacity-50 d-none d-md-block">
     </div>
   </div>
-  <div class="container text-center">
-  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-    <div class="col">
-      <div class="p-3">
-
-      </div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
-    <div class="col">
-      <div class="p-3">Row column</div>
-    </div>
+  <div class="text-center m-5">
+    <app-habilidades></app-habilidades>
   </div>
-</div>
   <div class="row my-1">
     <div class="col p-5">
       <h1>¿Cómo Puedo Ayudarte?</h1>

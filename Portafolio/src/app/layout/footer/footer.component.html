@@ -1,38 +1,48 @@
 <footer class="footer">
-  <div class="container-fluid ">
-    <div class="row p-4">
-      <div class="col-2 d-block align-items-center">
+  <div class="container-lg ">
+    <div class="row p-4 row-cols-1 row-cols-md-3">
+      <div class="col d-block align-items-center">
         <a class="" href="/home">
           <img src="../../../assets/img/icono.svg" class="img-fluid" alt="logo">
         </a>
       </div>
-      <div class="col-4">
-        <h1>Links</h1>
-        <ul>
-            @for (item of footerBar; track item) {
-              <a
-              [routerLink]="item.path"
-              routerLinkActive="border-bottom border-light"
-              >
-                <li class="fs-6  leading-5 text-white">
-                    {{item.title}}
-                </li>
-              </a>
-          }
+      <div class="col ">
+        <div>
+          <h3 class="fw-bolder">Enlaces</h3>
+        </div>
+        <div class="d-flex">
+          <ul class="p-1">
+              @for (item of footerBar; track item) {
+                <a
+                [routerLink]="item.path"
+                routerLinkActive="border-bottom border-light"
+                >
+                  <li class="fs-6  leading-5 text-white d.inline-block p-1">
+                      {{item.title}}
+                  </li>
+                </a>
+            }
         </ul>
+        </div>
       </div>
-      <div class="col-4">
-        <h1>Otros</h1>
-        <ul>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
+      <div class="col">
+        <div >
+          <h2 class="fw-bolder">Contacto</h2>
+        </div>
+        <ul class="p-1">
+          <li class="d-flex align-items-center">
+            <img src="../../../assets/img/envelope-at-fill.svg" alt="">
+            <p class="p-2 m-2">jhelcysandoval&#64;gmail.com</p>          
+          </li>
+          <li class="d-flex align-items-center">
+            <img src="../../../assets/img/github.svg" alt="">
+            <p class="p-2 m-2">jhelcysandoval&#64;gmail.com</p>          
+          </li>
+          <li class="d-flex align-items-center">
+            <img src="../../../assets/img/linkedin.svg" alt="">
+            <p class="p-2 m-2">jhelcysandoval&#64;gmail.com</p>          
+          </li>
         </ul>
-      </div>
-      <div class="col-2">
-        <button class="btn btn-primary">link</button>
       </div>
     </div>
     <div class="border border-light"></div>

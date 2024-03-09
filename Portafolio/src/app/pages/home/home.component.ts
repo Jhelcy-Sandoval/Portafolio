@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ProyectosComponent } from '../../components/proyectos/proyectos.component';
+import { HabilidadesComponent } from '../../components/habilidades/habilidades.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProyectosComponent],
+  imports: [ProyectosComponent, HabilidadesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

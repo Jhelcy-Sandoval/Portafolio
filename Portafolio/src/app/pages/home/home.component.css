@@ -1,4 +1,4 @@
-.container-fluid{
+.home{
   background-color: #001321;
 }
 
@@ -21,4 +21,8 @@
   background-color: #001321;
   padding: 3%;
   box-sizing: border-box;
+}
+
+.img-fluid{
+  width: 70%;
 }
