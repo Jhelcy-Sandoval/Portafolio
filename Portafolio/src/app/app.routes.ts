@@ -26,11 +26,6 @@ export const routes: Routes = [
       loadComponent: () => import('./pages/education/education.component')
     },
     {
-      path:'contacto',
-      title: 'Contacto',
-      loadComponent: () => import('./pages/contact/contact.component')
-    },
-    {
       path:'curriculum',
       title: 'Curriculum',
       loadComponent: () => import('./pages/curriculum/curriculum.component')

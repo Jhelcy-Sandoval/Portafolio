@@ -22,8 +22,8 @@
           [routerLink]="item.path"
           routerLinkActive="bg-primary rounded"
           class="p-2 d-inline-flex"
-          [class.border]="(item.title === 'Contacto' || item.title === 'Curriculum')"
-          [class.border-light]="(item.title === 'Contacto' || item.title === 'Curriculum')"
+          [class.border]="( item.title === 'Curriculum')"
+          [class.border-light]="( item.title === 'Curriculum')"
           >
           <div class="flex flex-col" >
               <span class="text-lg font-bold leading-5 text-white">
@@ -32,6 +32,43 @@
           </div>
           </a>
       }
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Contacto
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border-bottom border-dark-subtle">
+              <h1 class="modal-title fs-5 text-primary fw-bolder" id="exampleModalLabel">Formulario de contacto</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <form [formGroup]="contacForm" (ngSubmit)="formFunctions()" target="_blank">
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" formControlName="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" formControlName="name" class="form-control" id="exampleFormControlInput1" placeholder="nombre apellido">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" formControlName="chat" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer border-top border-dark-subtle">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" [disabled]="!contacForm.valid">Enviar
+                  </button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
