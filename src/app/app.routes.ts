@@ -21,14 +21,9 @@ export const routes: Routes = [
       loadComponent: () => import('./pages/about-me/about-me.component')
     },
     {
-      path:'servicios',
+      path: 'servicios',
       title: 'Servicios',
       loadComponent: () => import('./pages/education/education.component')
-    },
-    {
-      path:'curriculum',
-      title: 'Curriculum',
-      loadComponent: () => import('./pages/curriculum/curriculum.component')
     },
     {
       path:'', redirectTo: 'inicio', pathMatch:'full',
@@ -36,7 +31,7 @@ export const routes: Routes = [
   ]
 },
 {
-  path: '',
+  path: '**',
   redirectTo: 'portafolio',
   pathMatch:'full'
 }
