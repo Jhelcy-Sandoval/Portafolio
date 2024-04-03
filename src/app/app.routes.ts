@@ -17,7 +17,7 @@ export const routes: Routes = [
     },
     {
       path:'sobre-mi',
-      title: 'Sobre mi',
+      title: 'Sobre mí',
       loadComponent: () => import('./pages/about-me/about-me.component')
     },
     {
