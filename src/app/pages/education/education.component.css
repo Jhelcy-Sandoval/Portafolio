@@ -12,6 +12,6 @@ h1{
   color: #001321;
 }
 
-.card {
-  height: 50%;
+.col {
+  margin-bottom: 1rem;
 }
