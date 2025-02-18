@@ -14,9 +14,13 @@
       <div class="banner-image d-flex justify-content-center">
         <img  class="rounded-circle img-fluid  m-4" src="../../../assets/img/foto.webp" alt="foto de perfil">
       </div>
-      <span class="text-center d-flex justify-content-center align-items-center ">
-        <p #email class="p-2 m-2">jhelcysandoval&#64;gmail.com</p>
-        <button class="btn btn-ligth border border-primary" (click)="copyClipboard(email)">
+      <span class="text-center d-flex justify-content-center align-items-center">
+        <p #email class="p-2 m-2">{{ emailText }}</p>
+        <button 
+          class="btn btn-ligth border " 
+          [class]="{ 'border-primary': !isCopied, 'border-danger': isCopied }" 
+          (click)="copyClipboard()"
+        >
           <img src="../../../assets/img/envelope-at-fill.svg" alt="">
         </button>
       </span>

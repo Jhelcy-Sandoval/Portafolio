@@ -10,16 +10,18 @@ import { HabilidadesComponent } from '../../components/habilidades/habilidades.c
   styleUrl: './home.component.css'
 })
 export default class HomeComponent {
-  public copy = ''
+  @ViewChild('email') email!: ElementRef;
+  isCopied = false;
+  emailText = 'jhelcysandoval@gmail.com';
 
-  public copyClipboard (parrafo: HTMLParagraphElement) {
-    const textoACopiar = parrafo.innerText
-    navigator.clipboard.writeText(textoACopiar)
-    .then(() => {
-      console.log('Texto copiado al portapapeles: ' + textoACopiar);
-    })
-    .catch(err => {
-      console.error('Error al copiar texto: ', err);
+  copyClipboard() {
+    navigator.clipboard.writeText(this.emailText).then(() => {
+      this.isCopied = true;
+      console.log('good');
+      setTimeout(() => {
+        this.isCopied = false;
+      }, 2000); 
     });
   }
 }
+ 
