@@ -1,28 +1,40 @@
-.home{
+.home {
   background-color: #001321;
 }
 
-.grey{
+.grey {
   background-color: #D9D9D9;
   color: #001321;
 }
 
-.fst-italic{
+.fst-italic {
   font-style: italic;
   margin-right: 30%;
 }
 
-.text-primary{
+.text-primary {
   font-weight: bolder;
   font-size: 4rem
 }
 
-.carousel-col{
+.carousel-col {
   background-color: #001321;
   padding: 3%;
   box-sizing: border-box;
 }
 
-.img-fluid{
+.img-fluid {
   width: 70%;
+}
+
+.profile-circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-image: url("../../../assets/img/foto.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
